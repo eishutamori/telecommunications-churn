@@ -65,3 +65,69 @@ Customers who churned contacted customer service more frequently than those who 
 ### Business Insight
 
 Customers who churned consistently incurred higher average call charges across all periods. The greatest difference was observed in daytime call charges, indicating that higher daytime calling expenses may be more closely associated with customer churn than evening or night charges.
+
+
+## Question 6 - Total Day Minutes vs Churn
+
+### Findings
+
+- Average Day Minutes (Non-Churned): 175.56
+- Average Day Minutes (Churned): 208.99
+- Difference: 33.43 minutes
+
+### Business Insight
+
+Customers who churned spent significantly more time on daytime calls than customers who remained. This finding is consistent with the higher average daytime charges observed in Question 5, suggesting that heavy daytime usage may be associated with increased churn risk.
+
+
+## Question 7 - Total Evening Minutes vs Churn
+
+### Findings
+
+- Average Evening Minutes (Non-Churned): 198.57
+- Average Evening Minutes (Churned): 209.96
+- Difference: 11.39 minutes
+
+### Business Insight
+
+Customers who churned averaged **209.96 evening call minutes**, while non-churned customers averaged **198.57 minutes**. The difference of **11.39 minutes** is relatively small, indicating that evening call usage has a weaker association with customer churn compared to daytime call usage.
+
+
+## Question 8 - International Usage and Charges vs Churn
+
+### Findings
+
+- Average International Minutes (Non-Churned): 10.19
+- Average International Minutes (Churned): 10.63
+- Average International Charges (Non-Churned): 2.75
+- Average International Charges (Churned): 2.87
+
+### Business Insight
+
+Customers who churned showed only slightly higher international usage and charges than non-churned customers. While the differences were minimal, this finding complements Question 3 by suggesting that subscription to the International Plan has a stronger association with churn than the actual level of international usage.
+
+
+## Question 9 - Total Day Calls vs Churn
+
+### Findings
+
+- Average Day Calls (Non-Churned): 99.81
+- Average Day Calls (Churned): 100.48
+- Difference: 0.67 calls
+
+### Business Insight
+
+The average number of daytime calls is nearly the same for churned and non-churned customers. This contrasts with the much larger difference observed in total daytime minutes, indicating that the length of calls is more strongly associated with churn than the number of calls made.
+
+
+## Question 10 - Average Evening Charges vs Churn
+
+### Findings
+
+- Average Evening Charges (Non-Churned): 16.88
+- Average Evening Charges (Churned): 17.85
+- Difference: 0.97
+
+### Business Insight
+
+Churned customers incurred only slightly higher evening call charges than non-churned customers. Compared to the larger differences observed in daytime usage and charges, evening charges appear to have a weaker association with customer churn.
