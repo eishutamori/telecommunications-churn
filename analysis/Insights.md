@@ -401,11 +401,6 @@ Voice Mail message usage has only a weak relationship with customer churn. While
 Maintain Voice Mail services as a value-added feature, but prioritize retention strategies based on stronger churn indicators such as frequent customer service calls and high overall service usage.
 
 
-### MQ8 - Payment Method Preference vs Churn
-
-This question was not implemented because the provided telecommunications churn dataset does not contain any payment-related attributes (e.g., payment method, billing type, or billing frequency). To maintain analytical integrity, this analysis was omitted rather than making unsupported assumptions.
-
-
 # Medium Question 9 - International Calls vs Churn by International Plan
 
 ## Business Question
@@ -513,3 +508,118 @@ Heavy daytime users appear to have different service expectations or pricing sen
 ## Recommendation
 
 Monitor customers in the highest daytime usage quartile and proactively offer optimized pricing plans, usage-based recommendations, or loyalty incentives to reduce churn among heavy users.
+
+
+# Overall Medium Analysis Summary
+
+## Objective
+
+The medium-level analysis explored customer churn using segmentation, quartile analysis, threshold analysis, and comparative PivotTables to identify behavioral patterns associated with customer attrition.
+
+---
+
+## Key Findings
+
+- Customer service calls are one of the strongest indicators of churn. Customers making four or more service calls showed a significantly higher churn rate than those making fewer calls.
+
+- Customers in the highest daytime usage quartile experienced the highest churn rate (28.81%), indicating a clear tipping point where heavy usage is associated with increased churn.
+
+- Among International Plan subscribers, customers with low international call usage churned more frequently than heavy users, suggesting that underutilized plans may reduce perceived customer value.
+
+- Voice Mail message usage showed only a weak relationship with churn. Higher usage resulted in only a modest increase in churn rate.
+
+- Area code and account length exhibited relatively small differences in churn rates and are weaker predictors compared with customer behavior and service usage.
+
+- Overall service usage segmentation demonstrated that heavy users have substantially higher churn rates than low-usage customers.
+
+---
+
+## Business Recommendations
+
+- Prioritize customers with frequent customer service interactions for proactive retention efforts.
+- Monitor heavy daytime users and recommend plans that better match their usage patterns.
+- Identify International Plan subscribers with low international call usage and provide plan optimization or personalized engagement.
+- Focus retention strategies on behavioral indicators rather than geographic attributes such as area code.
+- Collect richer customer service data, including call reasons, to support more detailed churn analysis in future projects.
+
+---
+
+## Conclusion
+
+The analysis shows that customer behavior and service utilization are stronger predictors of churn than demographic or geographic characteristics. Threshold-based segmentation and quartile analysis successfully identified high-risk customer groups that can be targeted through proactive retention strategies.
+
+
+# Advanced Question 4 - Interaction Effects Analysis
+
+## Business Question
+
+Analyze how combinations of customer attributes influence churn.
+
+---
+
+## Findings
+
+| Interaction Segment | Churn Rate |
+|-----------------------------|-----------:|
+| High Calls + High Usage | 29.55% |
+| High Calls + Normal Usage | 58.30% |
+| Low Calls + High Usage | 28.75% |
+| Low Calls + Normal Usage | 5.03% |
+
+---
+
+## Key Observation
+
+Customers with frequent customer service calls and normal daytime usage experienced the highest churn rate (58.30%). This indicates that unresolved service issues have a stronger influence on churn than high usage alone.
+
+---
+
+## Business Insight
+
+Interaction analysis reveals that churn is driven not only by individual customer characteristics but also by combinations of behaviors. Repeated customer service interactions significantly amplify churn risk, even among customers with otherwise normal usage patterns.
+
+---
+
+## Recommendation
+
+Prioritize customers with four or more customer service calls for proactive retention efforts. Improving service quality and resolving customer issues promptly is likely to reduce churn more effectively than focusing solely on usage patterns.
+
+# Advanced Question 5 - Economic Impact of Customer Churn
+
+## Business Question
+
+Estimate the financial impact of customer churn using the available service charge data as a proxy for monthly revenue.
+
+---
+
+## Assumption
+
+Since the dataset does not include actual billing information, ARPU, or Customer Lifetime Value (CLV), estimated monthly revenue was calculated as:
+
+Estimated Monthly Revenue =
+Day Charge + Evening Charge + Night Charge + International Charge
+
+---
+
+## Findings
+
+| Customer Status | Customers | Avg. Estimated Monthly Revenue | Total Estimated Monthly Revenue |
+|-----------------|----------:|-------------------------------:|--------------------------------:|
+| Retained | 3,652 | 59.42 | 217,008.30 |
+| Churned | 598 | 59.55 | 35,608.73 |
+
+Estimated Revenue Loss Percentage: **14.10%**
+
+Estimated Annual Revenue Loss: **427,304.76**
+
+---
+
+## Business Insight
+
+The average estimated monthly revenue is nearly the same for churned and retained customers. Therefore, the financial impact is driven primarily by the number of customers lost rather than by differences in customer spending.
+
+---
+
+## Recommendation
+
+Implement proactive customer retention strategies to reduce recurring revenue loss. Even small reductions in churn can significantly improve long-term business revenue.
