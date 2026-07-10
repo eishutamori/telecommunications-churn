@@ -330,3 +330,186 @@ Evening call frequency does not appear to influence churn significantly. However
 ## Recommendation
 
 Review evening call pricing and introduce attractive evening calling packages or loyalty discounts for customers with higher evening call charges to improve retention.
+
+
+# Medium Question 6 - Customer Usage Segmentation vs Churn
+
+## Business Question
+
+Identify customer groups based on overall service usage patterns (day, evening, night, and international) and compare their churn rates.
+
+---
+
+## Findings
+
+| Usage Segment | Customers | Churn Rate |
+|--------------|----------:|-----------:|
+| High Usage | 1417 | 22.58% |
+| Medium Usage | 1416 | 7.20% |
+| Low Usage | 1417 | 12.42% |
+
+---
+
+## Key Observation
+
+High-usage customers have the highest churn rate, while medium-usage customers exhibit the lowest churn rate. The relationship between service usage and churn is not linear.
+
+---
+
+## Business Insight
+
+Customers with heavy service usage are more likely to churn, possibly due to higher billing, increased expectations, or greater sensitivity to service quality. Medium-usage customers appear to represent the most stable customer segment.
+
+---
+
+## Recommendation
+
+Develop premium retention strategies for high-usage customers, including personalized offers, loyalty incentives, and proactive customer support. Continue engaging medium-usage customers to maintain their strong retention levels.
+
+
+# Medium Question 7 - Voice Mail Plan & Voice Mail Messages vs Churn
+
+## Business Question
+
+Analyze churn among customers with a Voice Mail Plan by comparing customers with high and low voice mail message usage.
+
+---
+
+## Findings
+
+| Voice Mail Message Segment | Customers | Churn Rate |
+|----------------------------|----------:|-----------:|
+| High Usage | 529 | 8.51% |
+| Low Usage | 583 | 6.35% |
+
+---
+
+## Key Observation
+
+Customers with higher voice mail message usage exhibit a slightly higher churn rate than customers with lower usage. The difference is modest at **2.16 percentage points**.
+
+---
+
+## Business Insight
+
+Voice Mail message usage has only a weak relationship with customer churn. While heavier users churn slightly more often, the difference is much smaller than the effects observed for customer service calls, international call charges, or overall service usage.
+
+---
+
+## Recommendation
+
+Maintain Voice Mail services as a value-added feature, but prioritize retention strategies based on stronger churn indicators such as frequent customer service calls and high overall service usage.
+
+
+### MQ8 - Payment Method Preference vs Churn
+
+This question was not implemented because the provided telecommunications churn dataset does not contain any payment-related attributes (e.g., payment method, billing type, or billing frequency). To maintain analytical integrity, this analysis was omitted rather than making unsupported assumptions.
+
+
+# Medium Question 9 - International Calls vs Churn by International Plan
+
+## Business Question
+
+Determine whether the number of international calls affects churn differently for customers with and without an International Plan.
+
+---
+
+## Findings
+
+### International Plan = Yes
+
+| International Call Segment | Customers | Churn Rate |
+|---------------------------|----------:|-----------:|
+| High | 156 | 32.69% |
+| Low | 240 | 48.33% |
+
+### International Plan = No
+
+| International Call Segment | Customers | Churn Rate |
+|---------------------------|----------:|-----------:|
+| High | 1560 | 10.58% |
+| Low | 2294 | 11.60% |
+
+---
+
+## Key Observation
+
+Among customers with an International Plan, low international call usage is associated with substantially higher churn. For customers without an International Plan, international call volume has little impact on churn.
+
+---
+
+## Business Insight
+
+Customers who subscribe to an International Plan but make relatively few international calls may not perceive enough value from the service, increasing their likelihood of churning. In contrast, international call volume has minimal influence on customers who do not subscribe to the plan.
+
+---
+
+## Recommendation
+
+Monitor International Plan subscribers with consistently low international call usage and proactively offer plan optimization, customer education, or targeted retention offers to improve plan value and reduce churn.
+
+# Medium Question 10 - Customer Service Call Reasons vs Churn
+
+## Business Question
+
+Explore whether different customer service call reasons are associated with different churn rates.
+
+---
+
+## Findings
+
+The provided telecommunications dataset does not include customer service call reason information. It only records the total number of customer service calls made by each customer.
+
+Therefore, this analysis could not be performed without introducing unsupported assumptions.
+
+---
+
+## Business Insight
+
+Understanding the reason behind customer service interactions would provide valuable insights into the root causes of customer churn. Categories such as billing complaints, network issues, technical support requests, or service cancellations could help identify the most critical drivers of customer dissatisfaction.
+
+---
+
+## Recommendation
+
+Enhance future data collection by recording customer service call categories. This additional information would enable more detailed churn analysis and support targeted service improvements.
+
+
+# Medium Question 8 - Day Usage & Day Charges vs Churn
+
+## Business Question
+
+Investigate whether increasing daytime usage leads to higher churn and determine whether a tipping point exists.
+
+---
+
+## Findings
+
+### Day Minutes Quartiles
+
+| Quartile | Customers | Churn Rate |
+|----------|----------:|-----------:|
+| Q1 | 1063 | 12.14% |
+| Q2 | 1062 | 9.13% |
+| Q3 | 1063 | 6.21% |
+| Q4 | 1062 | 28.81% |
+
+The same churn pattern was observed for **Day Charges**, as day charges are directly proportional to day minutes in the dataset.
+
+---
+
+## Key Observation
+
+Customer churn remains relatively low across the first three quartiles but increases sharply in the highest usage quartile, indicating a clear usage threshold where churn risk rises significantly.
+
+---
+
+## Business Insight
+
+Heavy daytime users appear to have different service expectations or pricing sensitivities. Once customer usage reaches the highest quartile, churn increases substantially, suggesting that high-value users may require more suitable plans or proactive engagement.
+
+---
+
+## Recommendation
+
+Monitor customers in the highest daytime usage quartile and proactively offer optimized pricing plans, usage-based recommendations, or loyalty incentives to reduce churn among heavy users.
