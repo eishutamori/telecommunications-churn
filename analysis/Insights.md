@@ -1,3 +1,10 @@
+# Telecommunications Customer Churn Analysis
+
+## Business Insights Report
+
+This document summarizes the findings from the basic, medium, and advanced analyses conducted on the telecommunications customer churn dataset. Each section includes the business question, findings, insights, and recommendations derived from the analysis.
+
+
 ## Question 1 - Customer Churn Distribution
 
 ## Business Question
@@ -623,3 +630,43 @@ The average estimated monthly revenue is nearly the same for churned and retaine
 ## Recommendation
 
 Implement proactive customer retention strategies to reduce recurring revenue loss. Even small reductions in churn can significantly improve long-term business revenue.
+
+
+# Final Project Conclusion
+
+The analysis identified several behavioral patterns strongly associated with customer churn.
+
+## Major Findings
+
+- Customers with four or more customer service calls exhibited the highest churn risk.
+- Heavy daytime usage, particularly customers in the highest usage quartile, showed significantly higher churn.
+- International Plan subscribers experienced substantially higher churn than non-subscribers.
+- Geographic attributes such as area code and customer tenure demonstrated relatively weak relationships with churn.
+- Customer churn results in an estimated monthly revenue loss of approximately ₹35.6K.
+
+## Overall Recommendation
+
+The company should prioritize proactive retention strategies for customers exhibiting high-risk behaviors, particularly those with repeated customer service interactions, heavy daytime usage, and International Plan subscriptions. Early intervention through improved customer support, personalized pricing plans, and targeted retention campaigns can help reduce churn and minimize revenue loss.
+
+The interactive Excel dashboard developed as part of this project enables business users to monitor these key metrics dynamically using slicers and visual analytics, supporting informed decision-making.
+
+
+## Dashboard
+
+An interactive Excel dashboard was developed to summarize the analysis.
+
+The dashboard includes:
+
+- Total Customers
+- Churn Rate
+- Churned Customers
+- Monthly Revenue Loss
+- Churn Rate by Customer Service Calls
+- Churn Rate by Day Usage Quartile
+- Revenue Impact Analysis
+
+Interactive slicers allow users to filter the dashboard by:
+
+- International Plan
+- Voice Mail Plan
+- Area Code

@@ -1,38 +1,36 @@
-# Telecommunications Churn Analysis
+# Telecommunications Customer Churn Analysis
 
 ## Project Overview
 
-This project analyzes customer churn in a telecommunications company using Microsoft Excel. The objective is to identify the factors influencing customer churn and provide business recommendations to improve customer retention.
+This project analyzes customer churn in a telecommunications company using Microsoft Excel. The objective is to identify the factors influencing customer churn, measure its business impact, and present the findings through an interactive dashboard.
 
-This project is based on the **Telecommunications ChurnQuest** case study provided by Jobaaj.
+The analysis includes customer behavior, service usage, customer support interactions, and revenue impact to provide actionable business insights.
 
 ---
 
-## Business Problem
+## Dashboard Preview
 
-Customer churn is one of the biggest challenges faced by telecommunication companies. This project aims to analyze customer behavior, identify churn patterns, and generate actionable insights that support customer retention strategies.
+![Telecommunications Customer Churn Dashboard](screenshots/dashboard.png)
 
 ---
 
 ## Objectives
 
-- Analyze customer churn distribution
-- Identify key factors contributing to churn
-- Compare customer behavior across different plans and usage patterns
-- Answer business questions using Excel
-- Generate business insights and recommendations
+- Analyze customer churn patterns.
+- Identify key factors influencing churn.
+- Identify high-risk customer segments.
+- Measure the financial impact of customer churn.
+- Build an interactive Excel dashboard for business decision-making.
 
 ---
 
 ## Dataset
 
-The project uses three datasets:
+The project uses the following datasets:
 
 - train.csv
 - test.csv
 - sampleSubmission.csv
-
-The analysis is performed primarily on the training dataset.
 
 ---
 
@@ -41,47 +39,130 @@ The analysis is performed primarily on the training dataset.
 - Microsoft Excel
 - Pivot Tables
 - Pivot Charts
-- Conditional Formatting
+- Slicers
 - Excel Functions
-- Git
-- GitHub
+- Conditional Formatting
 
 ---
 
 ## Project Structure
 
-```
-Telecommunications Churn/
+```text
+TELECOMMUNICATIONS_CHURN_ANALYSIS
 │
-├── docs/
-├── data/
-│   ├── raw/
-│   └── processed/
-├── analysis/
-├── reports/
-├── screenshots/
-└── assets/
+├── analysis
+│   └── Insights.md
+│
+├── data
+│   ├── raw
+│   │   ├── train.csv
+│   │   ├── test.csv
+│   │   └── sampleSubmission.csv
+│   │
+│   └── processed
+│       └── telecommunications_churn_analysis.xlsx
+│
+├── reports
+│
+├── screenshots
+│   └── dashboard.png
+│
+├── README.md
+└── .gitignore
 ```
 
 ---
 
-## Project Status
+## Analysis Performed
 
-🚧 In Progress
+### Basic Analysis
 
-Current Phase:
+- Customer churn distribution
+- Account length analysis
+- International plan analysis
+- Customer service calls analysis
+- Call charges analysis
+- Day, evening, and international usage analysis
 
-- Project Setup ✅
-- Documentation ✅
-- Dataset Understanding ⏳
-- Data Cleaning ⏳
-- Business Analysis ⏳
-- Final Report ⏳
+### Medium Analysis
+
+- Area code segmentation
+- Customer service call threshold analysis
+- Account length quartile analysis
+- International charge segmentation
+- Evening usage analysis
+- Customer usage segmentation
+- Voice mail usage analysis
+- Day usage quartile analysis
+- International plan vs international calls
+- Customer service data availability assessment
+
+### Advanced Analysis
+
+- Customer attribute interaction analysis
+- Economic impact of customer churn
+
+---
+
+## Dashboard Features
+
+The interactive dashboard includes:
+
+### KPI Cards
+
+- Total Customers
+- Churn Rate
+- Churned Customers
+- Monthly Revenue Loss
+
+### Interactive Slicers
+
+- International Plan
+- Voice Mail Plan
+- Area Code
+
+### Visualizations
+
+- Churn Rate by Customer Service Calls
+- Churn Rate by Day Usage Quartile
+- Revenue Impact Analysis
+
+---
+
+## Key Findings
+
+- Overall customer churn rate is **14.07%**.
+- Customers making **4 or more customer service calls** exhibit a significantly higher churn rate.
+- Customers in the highest **day usage quartile** have the highest churn rate.
+- International Plan subscribers have substantially higher churn than non-subscribers.
+- Customer churn results in an estimated monthly revenue loss of approximately **₹35.6K**.
+
+---
+
+## Repository
+
+### analysis/
+
+Contains the complete business insights, findings, recommendations, and conclusions from the analysis.
+
+### data/raw/
+
+Contains the original datasets.
+
+### data/processed/
+
+Contains the completed Excel analysis workbook.
+
+### reports/
+
+Contains the final project report.
+
+### screenshots/
+
+Contains the dashboard preview used in this repository.
 
 ---
 
 ## Author
 
 **Eishu Tamori**
-
-Aspiring Data Analyst | Microsoft Excel | SQL | Python | Power BI
